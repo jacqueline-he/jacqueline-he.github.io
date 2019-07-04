@@ -1,152 +1,184 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Jacqueline He</title>
-        <style>
-            #particle-js {
-            display: block;
-            position: absolute top left;
-            width: 100%;
-            height: 100%;
+<html style="overflow: hidden">
 
-            }
+<head>
 
-
-        </style>
-         
-
-        
-    </head>
-    <body>
-        
-        
-        <div style="background-image: url(https://static.tumblr.com/e5da3cb3fbe9af8f2198f3459e72424a/2icx37z/Regny6496/tumblr_static_3p5gf7s0v82sskoc4ws80cow8.png)">
-                <div id="particles-js"></div>  
-        
-                <p style="color:White;">
-        I'm a Princeton University sophomore from San Jose, <br>
-        California. I'm majoring in computer science, with  <br>
-        intended minors in finance and statistics & machine <br>
-        learning.
-                </p>
-        </div>
-        
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
-        <script type="text/javascript">
-        particlesJS("particles-js", {
-  "particles": {
-    "number": {
-      "value": 90,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "edge",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 3
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 1,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 0.9744926547616141,
-        "opacity_min": 0.15429467033725558,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 96.20472365193136,
-      "color": "#ffffff",
-      "opacity": 0.20844356791251797,
-      "width": 0
-    },
-    "move": {
-      "enable": true,
-      "speed": 5,
-      "direction": "none",
-      "random": true,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": true,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jacqueline He</title>
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+      border: 0
+      
     }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": false,
-        "mode": "grab"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 400,
+
+    #particle-js {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+    }
+
+
+    .overlay {  
+      position: relative;
+      width: 600px;
+      height: 400px;
+      z-index: 10;
+      top: 50%;
+      margin-top: -300px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      background-color: rgba(255, 255, 255, 0.3);
+      color: White;
+    }
+
+    
+  </style>
+
+
+
+</head>
+
+<body>
+
+
+
+    <div style="background-image: url(https://static.tumblr.com/e5da3cb3fbe9af8f2198f3459e72424a/2icx37z/Regny6496/tumblr_static_3p5gf7s0v82sskoc4ws80cow8.png)">
+      <div id="particles-js"></div>
+
+      <div class="overlay"> 
+        
+      <center> <strong> JACQUELINE HE </strong> </center> 
+      I'm a Princeton University sophomore from San Jose, <br>
+      California. I'm majoring in computer science, with <br>
+      intended minors in finance and statistics & machine <br>
+      learning.
+       
+      </div>
+    </div>
+    
+
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script type="text/javascript">
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 90,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "edge",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 3
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 1,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 0.9744926547616141,
+            "opacity_min": 0.15429467033725558,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
         "line_linked": {
-          "opacity": 1
+          "enable": true,
+          "distance": 96.20472365193136,
+          "color": "#ffffff",
+          "opacity": 0.20844356791251797,
+          "width": 0
+        },
+        "move": {
+          "enable": true,
+          "speed": 5,
+          "direction": "none",
+          "random": true,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": true,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
         }
       },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": false,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
       },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": false
-});
-        </script>
+      "retina_detect": false
+    });
+    
+  </script> 
 
-    </body>
+</body>
+
 </html>
