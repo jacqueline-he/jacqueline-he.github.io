@@ -5,6 +5,10 @@ body {
       
 }
 
+html {
+    background-image: url(https://static.tumblr.com/e5da3cb3fbe9af8f2198f3459e72424a/2icx37z/Regny6496/tumblr_static_3p5gf7s0v82sskoc4ws80cow8.png)
+}
+
 #particle-js {
       display: block;
       position: absolute;
