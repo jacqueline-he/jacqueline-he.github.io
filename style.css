@@ -1,22 +1,14 @@
 body {
       margin: 0;
       padding: 0;
-      border: 0
-      
+      height: 100vh;
+      overflow: hidden;
 }
 
-html {
-    background-image: url(https://static.tumblr.com/e5da3cb3fbe9af8f2198f3459e72424a/2icx37z/Regny6496/tumblr_static_3p5gf7s0v82sskoc4ws80cow8.png)
-}
-
-#particle-js {
-      display: block;
-      position: absolute;
-      width: 100%;
+#particles-js {
       height: 100%;
-
+      background-image: url(https://static.tumblr.com/e5da3cb3fbe9af8f2198f3459e72424a/2icx37z/Regny6496/tumblr_static_3p5gf7s0v82sskoc4ws80cow8.png);
 }
-
 
 .overlay {  
       position: relative;
@@ -24,7 +16,7 @@ html {
       height: 400px;
       z-index: 10;
       top: 50%;
-      margin-top: -300px;
+      margin-top: -750px;
       left: 50%;
       transform: translate(-50%, -50%);
       display: block;
