@@ -11,6 +11,21 @@ body {
       background-image: url(https://static.tumblr.com/e5da3cb3fbe9af8f2198f3459e72424a/2icx37z/Regny6496/tumblr_static_3p5gf7s0v82sskoc4ws80cow8.png);
 }
 
+.main {
+      position: relative;
+      width: 600px;
+      height: 400px;
+      z-index: 10;
+      top: 50%;
+      margin-top: -750px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      background-color: rgba(255, 255, 255, 0.3);
+      color: White;
+      font-family: 'Source Sans Pro', sans-serif;
+}
+
 .overlay {  
       position: relative;
       width: 600px;
