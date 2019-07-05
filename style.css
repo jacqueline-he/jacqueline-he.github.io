@@ -36,13 +36,27 @@ body {
       background: -webkit-radial-gradient(center center, circle cover, rgba(235, 255, 226, 0), rgb(0, 0, 0) 10%);
 }
 
+.name {
+      position: relative;
+      z-index: 70;
+      color: White;
+      font-family: 'Source Sans Pro', sans-serif;
+      top: 50%;
+      margin-top: -5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 400%;
+      font-weight: 600;
+
+}
+
 .overlay {  
       position: relative;
       width: 600px;
       height: 400px;
       z-index: 10;
       top: 50%;
-      margin-top: -750px;
+      margin-top: 25%;
       left: 50%;
       transform: translate(-50%, -50%);
       display: block;
