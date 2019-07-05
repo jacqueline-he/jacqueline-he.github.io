@@ -33,34 +33,20 @@ body {
       width: 9999px;
       height: 9999px;
       z-index: 2;
-      background: -webkit-radial-gradient(center center, circle cover, rgba(235, 255, 226, 0), rgb(0, 0, 0) 10%);
+      background: -webkit-radial-gradient(center center, circle cover, rgba(0, 0, 0, 0.001), rgb(0, 0, 0) 10%);
+      background: radial-gradient(center center, circle cover, rgb(169, 255, 129), rgb(0, 0, 0) 5%);
 }
 
 .name {
       position: relative;
       z-index: 70;
       color: White;
-      font-family: 'Source Sans Pro', sans-serif;
+      font-family: 'Lato', sans-serif;
       top: 50%;
       margin-top: -5%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 400%;
+      font-size: 360%;
       font-weight: 600;
 
-}
-
-.overlay {  
-      position: relative;
-      width: 600px;
-      height: 400px;
-      z-index: 10;
-      top: 50%;
-      margin-top: 25%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: block;
-      background-color: rgba(255, 255, 255, 0.3);
-      color: White;
-      font-family: 'Source Sans Pro', sans-serif;
 }
