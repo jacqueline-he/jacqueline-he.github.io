@@ -37,10 +37,10 @@ body {
 }
 
 .textcont {
-      position: relative;
+      position: fixed;
       z-index: 700;
       top: 50%;
-      margin-top: 5%;
+      margin-top: 0%;
       left: 50%;
       transform: translate(-50%, -50%);
 }
@@ -55,7 +55,7 @@ body {
 }
 
 .links {
-      
+      margin-top: 5%;
       letter-spacing: 20px;
 }
 
@@ -70,9 +70,8 @@ a, a:hover {
       font-size: 32px; /* Set a font size */
       cursor: pointer; /* Mouse pointer on hover */
       position: relative;
-      margin-top: 5%;
 }
-    
+  
 
 .btn:hover {
       color: white; 
@@ -94,6 +93,16 @@ a, a:hover {
 
 #popup {
       z-index: 800;
-      position: absolute;
+      margin-bottom: -15;
+      font-family: 'Roboto', sans-serif;
+      text-indent: 50px;
 }
+
+#popup2 {
+      z-index: 800;
+      margin-top: -5;
+      font-family: 'Roboto', sans-serif;
+      
+}
+
 
