@@ -34,19 +34,61 @@ body {
       height: 9999px;
       z-index: 2;
       background: -webkit-radial-gradient(center center, circle cover, rgba(0, 0, 0, 0.001), rgb(0, 0, 0) 10%);
-      background: radial-gradient(center center, circle cover, rgb(169, 255, 129), rgb(0, 0, 0) 5%);
 }
 
-.name {
-      position: relative;
-      z-index: 70;
-      color: White;
-      font-family: 'Lato', sans-serif;
+.textcont {
+      position: fixed;
+      z-index: 700;
       top: 50%;
-      margin-top: -5%;
+      margin-top: 5%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 360%;
-      font-weight: 600;
+}
 
+.name {     
+      color: White;
+      font-family: 'Lato', sans-serif;
+      font-size: 360%;
+      font-weight: 300;
+      letter-spacing: 10px;
+
+}
+
+.links {
+      margin-top: 8%;
+      letter-spacing: 20px;
+}
+
+a, a:hover { 
+      color: inherit; 
+} 
+
+.btn {
+      border: none; /* Remove borders */
+      color: white; /* White text */
+      padding: 10px 10px; /* Some padding */
+      font-size: 32px; /* Set a font size */
+      cursor: pointer; /* Mouse pointer on hover */
+      position: relative;
+    }
+    
+
+.btn:hover {
+      color: white; 
+      animation: pulse 1s infinite;
+      animation-timing-function: linear; 
+}
+
+
+    
+ @keyframes pulse {
+      0% { transform: scale(1); }
+      25% { transform: scale(1.125);}
+      50% { transform: scale(1.25);}
+      75% { transform: scale(1.125);}
+      100% { transform: scale(1); }     
+}
+.btn:focus {
+      outline: 0;
+      box-shadow: none!important;
 }
