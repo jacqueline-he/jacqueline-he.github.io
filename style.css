@@ -27,7 +27,7 @@ body {
       font-family: 'Source Sans Pro', sans-serif;
 }
 
-.cont {
+.spotlt {
       display: block;
       position: fixed;
       width: 9999px;
@@ -55,7 +55,7 @@ body {
 }
 
 .links {
-      margin-top: 8%;
+      
       letter-spacing: 20px;
 }
 
@@ -70,7 +70,8 @@ a, a:hover {
       font-size: 32px; /* Set a font size */
       cursor: pointer; /* Mouse pointer on hover */
       position: relative;
-    }
+      margin-top: 5%;
+}
     
 
 .btn:hover {
@@ -78,8 +79,6 @@ a, a:hover {
       animation: pulse 1s infinite;
       animation-timing-function: linear; 
 }
-
-
     
  @keyframes pulse {
       0% { transform: scale(1); }
@@ -92,3 +91,9 @@ a, a:hover {
       outline: 0;
       box-shadow: none!important;
 }
+
+#popup {
+      z-index: 800;
+      position: absolute;
+}
+

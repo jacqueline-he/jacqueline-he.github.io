@@ -29,31 +29,51 @@
         
         <div id="particles-js"> </div>
         <div class="main">
-          <div class="cont"></div>
+          <div class="spotlt"></div>
 
             <div class="textcont">
               <div class="name">
               <center> <strong>JACQUELINE HE</strong> </center> 
               </div>
 
-              <div class="links">
+              <div class="links" style=display:block>
                   <center>
-                  <button class="btn"><i class="far fa-user"></i></button>
+                  <button class="btn" onclick="showHidden('popup')"><i class="far fa-user"></i></a></button>
                   <button class="btn"><a href="mailto: jyh@princeton.edu"><i class="fas fa-envelope"></i></a></button>
                   <button class="btn"><a href="https://github.com/jacqueline-he/" target="_blank"><i class="fab fa-github"></i></a></button>
                   <button class="btn"><a href="https://linkedin.com/in/jacqueline-he/" target="_blank"><i class="fab fa-linkedin"></i></a></button>
-                  <button class="btn"><i class="fa fa-folder"></i></button>
+                  <button class="btn" onclick="showHidden('popup2')"><i class="fa fa-folder"></i></a></button>
                 </center>
               </div>
+
+              <div id="popup" style=display:none>
+                Hi! I’m a Princeton University sophomore majoring in Computer Science (BSE), with intended minors in finance, creative writing, and statistics & machine learning. 
+                <p>
+                At school, I’m part of Rehack—a reverse hackathon initiative that seeks to promote greater and healthier relationships between people and technology, and Effective Altruism Investments—a $100K student-run investment fund focused on investing and philanthropy. This summer, I’m interning at Riverbed Technology and working in backend development on SteelConnect, its cloud-based management system software. 
+                <p>
+                My other interests include trying new flavors of tea, hiking, and reading anything and everything by Gabriel García Márquez. I grew up in San Jose, California. 
+                <p>
+                <center>
+                <button class="btn" onclick="showHidden('popup')"><i class="fas fa-chevron-left"></i></a></button>
+                </center>
+              </div>
+
+
+              <div id="popup2" style=display:none>
+                  These are my projects!! So far I don't have many :(
+                  <center>
+                  <button class="btn" onclick="showHidden('popup2')"><i class="fas fa-chevron-left"></i></a></button>
+                  </center>
+                </div>
+
+              
+              
             </div>
           
 
-        
-
-
-
       </div>
-      <script type="text/javascript" src="all.min.js"></script>
+        <script type="text/javascript" src="showHidden.js"></script>
+        <script type="text/javascript" src="all.min.js"></script>
         <script type="text/javascript" src="spotlight.js"></script>
         <script type="text/javascript" src="particles.min.js"></script>
         <script type="text/javascript" src = "particles.js"> </script>   

@@ -1,4 +1,4 @@
-var img=$('.cont');
+var img=$('.spotlt');
 $(document).ready(function(e) {
     $(document).mousemove(function(e) {
         var positionLeft = e.clientX - img.width()/2;
