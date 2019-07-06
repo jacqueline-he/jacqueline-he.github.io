@@ -37,7 +37,7 @@ body {
 }
 
 .textcont {
-      position: fixed;
+      position: relative;
       z-index: 700;
       top: 50%;
       margin-top: 5%;
