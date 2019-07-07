@@ -48,6 +48,8 @@ body {
     font-size: 360%;
     font-weight: 300;
     letter-spacing: 10px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .header {
@@ -115,10 +117,14 @@ a:hover {
     margin-bottom: -15;
     font-family: 'Roboto', sans-serif;
     text-indent: 50px;
+    width: 500px;
+    overflow: hidden;
 }
 
 #popup2 {
     z-index: 800;
     margin-top: -5;
     font-family: 'Roboto', sans-serif;
+    width: 500px;
+    overflow: hidden;
 }
