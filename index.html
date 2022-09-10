@@ -18,6 +18,21 @@
 
     gtag('config', 'G-JDY1XTPZQ6');
   </script>
+  <script type="text/javascript">
+    function showAbstract(abstract)
+    {
+    var x = document.getElementById(abstract);
+    if (x.style.display === "none") {
+      x.style.display = "block";
+
+    }
+    else {
+      x.style.display = "none";
+    }
+    
+    }
+    
+    </script>
 </head>
 
 <body>
@@ -66,10 +81,10 @@
             <br>
             <em>NAACL</em> 2022  
             <br>
-            <a href="https://aclanthology.org/2022.naacl-main.278/">abstract</a> / 
+            <a id="sample_text" onClick="showAbstract('abs-rationale')">abstract</a> /
             <a href="https://aclanthology.org/2022.naacl-main.278/">paper</a> / 
             <a href="https://github.com/princeton-nlp/rationale-robustness">code</a>  	
-            <p>A growing line of work has investigated the development of neural NLP models that can produce rationales--subsets of input that can explain their model predictions. In this paper, we ask whether such rationale models can also provide robustness to adversarial attacks in addition to their interpretable nature. Since these models need to first generate rationales ("rationalizer") before making predictions ("predictor"), they have the potential to ignore noise or adversarially added text by simply masking it out of the generated rationale. To this end, we systematically generate various types of 'AddText' attacks for both token and sentence-level rationalization tasks, and perform an extensive empirical evaluation of state-of-the-art rationale models across five different tasks. Our experiments reveal that the rationale models show the promise to improve robustness, while they struggle in certain scenarios--when the rationalizer is sensitive to positional bias or lexical choices of attack text. Further, leveraging human rationale as supervision does not always translate to better performance. Our study is a first step towards exploring the interplay between interpretability and robustness in the rationalize-then-predict framework.</p>	
+            <div id="abs-rationale" style="display:none"><br> A growing line of work has investigated the development of neural NLP models that can produce rationales--subsets of input that can explain their model predictions. In this paper, we ask whether such rationale models can also provide robustness to adversarial attacks in addition to their interpretable nature. Since these models need to first generate rationales ("rationalizer") before making predictions ("predictor"), they have the potential to ignore noise or adversarially added text by simply masking it out of the generated rationale. To this end, we systematically generate various types of 'AddText' attacks for both token and sentence-level rationalization tasks, and perform an extensive empirical evaluation of state-of-the-art rationale models across five different tasks. Our experiments reveal that the rationale models show the promise to improve robustness, while they struggle in certain scenarios--when the rationalizer is sensitive to positional bias or lexical choices of attack text. Further, leveraging human rationale as supervision does not always translate to better performance. Our study is a first step towards exploring the interplay between interpretability and robustness in the rationalize-then-predict framework.</div>
           </td>
 
         </tbody>
