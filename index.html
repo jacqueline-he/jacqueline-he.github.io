@@ -89,8 +89,7 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>Research</heading>
                   <p>
-                    I am broadly interested in deep learning and natural language processing, specifically the emergent
-                    capabilities, applications, and risks of language models.
+                    I am broadly interested in natural language processing, specifically how to encourage factuality in language models.
                   </p>
                   <p>Thanks to my amazing mentors and collaborators! ☺ </p>
                   <p><i> * denotes equal contribution</i></p>
@@ -98,6 +97,49 @@
               </tr>
             </tbody>
           </table>
+
+          <table
+                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <papertitle>OpenScholar: Synthesizing Scientific Literature with Retrieval-augmented LMs</papertitle>
+                    <br>
+                    Akari Asai, <strong>Jacqueline He</strong>*, Rulin Shao*, Weijia Shi, Amanpreet Singh, Joseph Chee Chang, Kyle Lo, Luca Soldaini, Sergey Feldman, Mike D'arcy, David Wadden, Matt Latzke, Minyang Tian, Pan Ji, Shengyan Liu, Hao Tong, Bohao Wu, Yanyu Xiong, Luke Zettlemoyer, Graham Neubig, Dan Weld, Doug Downey, Wen-tau Yih, Pang Wei Koh, Hannaneh Hajishirzi
+                    <br>
+                    <em>preprint</em> 2024
+                    <br>
+                    <a id="sample_text" onClick="showAbstract('abs-openscholar')">abstract</a> /
+                    <a href="https://arxiv.org/abs/2411.14199">paper</a> /
+                    <a href="https://github.com/AkariAsai/OpenScholar">code</a> /
+                    <a href="https://allenai.org/blog/openscholar">blog</a> /
+                    <a href="https://openscholar.allen.ai/">demo</a>
+                    <br>
+                    <div id="abs-openscholar"
+                      style="display:none; border-style:dotted; padding:10px;  margin-top: 10px; border-color: #8fa19c">
+                      Scientific progress depends on researchers' ability to synthesize the growing body of literature. Can large language models (LMs) assist scientists in this task? We introduce OpenScholar, a specialized retrieval-augmented LM that answers scientific queries by identifying relevant passages from 45 million open-access papers and synthesizing citation-backed responses. To evaluate OpenScholar, we develop ScholarQABench, the first large-scale multi-domain benchmark for literature search, comprising 2,967 expert-written queries and 208 long-form answers across computer science, physics, neuroscience, and biomedicine. On ScholarQABench, OpenScholar-8B outperforms GPT-4o by 5% and PaperQA2 by 7% in correctness, despite being a smaller, open model. While GPT4o hallucinates citations 78 to 90% of the time, OpenScholar achieves citation accuracy on par with human experts. OpenScholar's datastore, retriever, and self-feedback inference loop also improves off-the-shelf LMs: for instance, OpenScholar-GPT4o improves GPT-4o's correctness by 12%. In human evaluations, experts preferred OpenScholar-8B and OpenScholar-GPT4o responses over expert-written ones 51% and 70% of the time, respectively, compared to GPT4o's 32%. We open-source all of our code, models, datastore, data and a public demo.</div>
+                  </td>
+                </tbody>
+
+                <table
+                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <papertitle>Scaling Retrieval-Based Language Models with a Trillion-Token Datastore</papertitle>
+                    <br>
+                    Rulin Shao, <strong>Jacqueline He</strong>, Akari Asai, Weijia Shi, Tim Dettmers, Sewon Min, Luke Zettlemoyer, Pang Wei Koh
+                    <br>
+                    <em>NeurIPS</em> 2024
+                    <br>
+                    <a id="sample_text" onClick="showAbstract('abs-massiveds')">abstract</a> /
+                    <a href="https://arxiv.org/abs/2407.12854">paper</a> /
+                    <a href="https://github.com/RulinShao/retrieval-scaling">code</a>
+                    <br>
+                    <div id="abs-massiveds"
+                      style="display:none; border-style:dotted; padding:10px;  margin-top: 10px; border-color: #8fa19c">
+                      Scaling laws with respect to the amount of training data and the number of parameters allow us to predict the cost-benefit trade-offs of pretraining language models (LMs) in different configurations. In this paper, we consider another dimension of scaling: the amount of data available at inference time. Specifically, we find that increasing the size of the datastore used by a retrieval-based LM monotonically improves language modeling and several downstream tasks without obvious saturation, such that a smaller model augmented with a large datastore outperforms a larger LM-only model on knowledge-intensive tasks. By plotting compute-optimal scaling curves with varied datastore, model, and pretraining data sizes, we show that using larger datastores can significantly improve model performance for the same training compute budget. We carry out our study by constructing a 1.4 trillion-token datastore named MassiveDS, which is the largest and the most diverse open-sourced datastore for retrieval-based LMs to date, and designing an efficient pipeline for studying datastore scaling in a computationally accessible manner. Finally, we analyze the effect of improving the retriever, datastore quality filtering, and other design choices on our observed scaling trends. Overall, our results show that datastore size should be considered as an integral part of LM efficiency and performance trade-offs. To facilitate future research, we open-source our datastore and code at https://github.com/RulinShao/retrieval-scaling.
+                  </td>
+                </tbody>
+
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
@@ -156,9 +198,7 @@
                       make an effort to reproduce and compare previous methods, and call for unifying the evaluation
                       settings across gender debiasing methods for better future comparison.</div>
                   </td>
-
                 </tbody>
-
                 <table
                   style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                   <tbody>
