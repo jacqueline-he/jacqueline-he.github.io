@@ -64,14 +64,13 @@
 }
 
 a {
-  color: #001e15;
+  color: #46497f;
   text-decoration: underline;
-  font-weight: 700;
 }
 
 a:focus,
 a:hover {
-  color: #46497f;
+  color: #888aac;
   text-decoration: none;
   text-decoration: underline;
 }
