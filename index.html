@@ -50,10 +50,9 @@
                   <p style="text-align:center">
                     <name>Jacqueline He</name>
                   </p>
-                  <p>I am a second-year Ph.D. student in the <a href="https://www.cs.washington.edu/research/nlp">Natural
+                  <p>I am a third-year Ph.D. student in the <a href="https://www.cs.washington.edu/research/nlp">Natural
                       Language Processing</a> group at the University of Washington. My advisors are <a
-                      href="https://homes.cs.washington.edu/~lsz/">Luke Zettlemoyer</a> and <a
-                      href="https://www.koh.pw/">Pang Wei Koh</a>. I am fortunate to
+                      href="https://www.koh.pw/">Pang Wei Koh</a> and <a href="https://homes.cs.washington.edu/~lsz/">Luke Zettlemoyer</a>. I am fortunate to
                     be supported by the <a href="https://www.nsfgrfp.org/">NSF Graduate Research Fellowship</a>.</p>
                   <p> In 2022, I graduated <i>summa cum laude</i> from Princeton University with a B.S.E. in <a
                       href="https://cs.princeton.edu/">Computer Science</a>, and minors in <a
@@ -112,28 +111,6 @@
                 style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
                   <td style="padding:20px;width:100%;vertical-align:middle">
-                    <papertitle>Precise Information Control in Long-Form Text Generation</papertitle>
-                    <br>
-                    <strong>Jacqueline He</strong>, Howard Yen*, Margaret Li*, Shuyue Stella Li, Zhiyuan Zeng, Weijia Shi, Yulia Tsvetkov, Danqi Chen, Pang Wei Koh, Luke Zettlemoyer
-                    <br>
-                    <em>preprint</em> 2025
-                    <br>
-                    <a id="sample_text" onClick="showAbstract('abs-pic')">abstract</a> /
-                    <a href="https://arxiv.org/abs/2506.06589">paper</a> /
-                    <a href="https://github.com/jacqueline-he/precise-information-control">code</a> 
-                    <br>
-                    <div id="abs-pic"
-                      style="display:none; border-style:dotted; padding:10px;  margin-top: 10px; border-color: #8fa19c">
-                      A central challenge in modern language models (LMs) is intrinsic hallucination: the generation of information that is plausible but unsubstantiated relative to input context. To study this problem, we propose Precise Information Control (PIC), a new task formulation that requires models to generate long-form outputs grounded in a provided set of short self-contained statements, known as verifiable claims, without adding any unsupported ones. For comprehensiveness, PIC includes a full setting that tests a model's ability to include exactly all input claims, and a partial setting that requires the model to selectively incorporate only relevant claims. We present PIC-Bench, a benchmark of eight long-form generation tasks (e.g., summarization, biography generation) adapted to the PIC setting, where LMs are supplied with well-formed, verifiable input claims. Our evaluation of a range of open and proprietary LMs on PIC-Bench reveals that, surprisingly, state-of-the-art LMs still intrinsically hallucinate in over 70% of outputs. To alleviate this lack of faithfulness, we introduce a post-training framework, using a weakly supervised preference data construction method, to train an 8B PIC-LM with stronger PIC ability--improving from 69.1% to 91.0% F1 in the full PIC setting. When integrated into end-to-end factual generation pipelines, PIC-LM improves exact match recall by 17.1% on ambiguous QA with retrieval, and factual precision by 30.5% on a birthplace verification task, underscoring the potential of precisely grounded generation.
-                      </div>
-                  </td>
-                </tbody>
-
-
-          <table
-                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                  <td style="padding:20px;width:100%;vertical-align:middle">
                     <papertitle>OpenScholar: Synthesizing Scientific Literature with Retrieval-augmented LMs</papertitle>
                     <br>
                     Akari Asai, <strong>Jacqueline He</strong>*, Rulin Shao*, Weijia Shi, Amanpreet Singh, Joseph Chee Chang, Kyle Lo, Luca Soldaini, Sergey Feldman, Mike D'arcy, David Wadden, Matt Latzke, Minyang Tian, Pan Ji, Shengyan Liu, Hao Tong, Bohao Wu, Yanyu Xiong, Luke Zettlemoyer, Graham Neubig, Dan Weld, Doug Downey, Wen-tau Yih, Pang Wei Koh, Hannaneh Hajishirzi
@@ -162,6 +139,27 @@
               </tr>
             </tbody>
           </table>
+
+          <table
+          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <papertitle>Precise Information Control in Long-Form Text Generation</papertitle>
+              <br>
+              <strong>Jacqueline He</strong>, Howard Yen*, Margaret Li*, Shuyue Stella Li, Zhiyuan Zeng, Weijia Shi, Yulia Tsvetkov, Danqi Chen, Pang Wei Koh, Luke Zettlemoyer
+              <br>
+              <em>NeurIPS</em> 2025
+              <br>
+              <a id="sample_text" onClick="showAbstract('abs-pic')">abstract</a> /
+              <a href="https://arxiv.org/abs/2506.06589">paper</a> /
+              <a href="https://github.com/jacqueline-he/precise-information-control">code</a> 
+              <br>
+              <div id="abs-pic"
+                style="display:none; border-style:dotted; padding:10px;  margin-top: 10px; border-color: #8fa19c">
+                A central challenge in modern language models (LMs) is intrinsic hallucination: the generation of information that is plausible but unsubstantiated relative to input context. To study this problem, we propose Precise Information Control (PIC), a new task formulation that requires models to generate long-form outputs grounded in a provided set of short self-contained statements, known as verifiable claims, without adding any unsupported ones. For comprehensiveness, PIC includes a full setting that tests a model's ability to include exactly all input claims, and a partial setting that requires the model to selectively incorporate only relevant claims. We present PIC-Bench, a benchmark of eight long-form generation tasks (e.g., summarization, biography generation) adapted to the PIC setting, where LMs are supplied with well-formed, verifiable input claims. Our evaluation of a range of open and proprietary LMs on PIC-Bench reveals that, surprisingly, state-of-the-art LMs still intrinsically hallucinate in over 70% of outputs. To alleviate this lack of faithfulness, we introduce a post-training framework, using a weakly supervised preference data construction method, to train an 8B PIC-LM with stronger PIC ability--improving from 69.1% to 91.0% F1 in the full PIC setting. When integrated into end-to-end factual generation pipelines, PIC-LM improves exact match recall by 17.1% on ambiguous QA with retrieval, and factual precision by 30.5% on a birthplace verification task, underscoring the potential of precisely grounded generation.
+                </div>
+            </td>
+          </tbody>
 
 
           <table
