@@ -106,6 +106,27 @@
               </tr>
             </tbody>
           </table>
+          <table
+                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <papertitle>RLVE: Scaling Up Reinforcement Learning for Language Models with Adaptive Verifiable Environments</papertitle>
+                    <br>
+                    Zhiyuan Zeng, Hamish Ivison, Yiping Wang, Lifan Yuan, Shuyue Stella Li, Zhuorui Ye, Siting Li, <strong>Jacqueline He</strong>, Runlong Zhou, Tong Chen, Chenyang Zhao, Yulia Tsvetkov, Simon Shaolei Du, Natasha Jaques, Hao Peng, Pang Wei Koh, Hannaneh Hajishirzi
+                    <br>
+                    <em>preprint</em> 2025
+                    <br>
+                    <a id="sample_text" onClick="showAbstract('abs-rlve')">abstract</a> /
+                    <a href="https://arxiv.org/abs/2511.07317">paper</a> /
+                    <a href="https://github.com/Zhiyuan-Zeng/RLVE">code</a> 
+                    <br>
+                    <div id="abs-rlve"
+                      style="display:none; border-style:dotted; padding:10px;  margin-top: 10px; border-color: #8fa19c">
+                      We introduce Reinforcement Learning (RL) with Adaptive Verifiable Environments (RLVE), an approach using verifiable environments that procedurally generate problems and provide algorithmically verifiable rewards, to scale up RL for language models (LMs). RLVE enables each verifiable environment to dynamically adapt its problem difficulty distribution to the policy model’s capabilities as training progresses. In contrast, static data distributions often lead to vanishing learning signals when problems are either too easy or too hard for the policy. To implement RLVE, we create RLVE-GYM, a large-scale suite of 400 verifiable environments carefully developed through manual environment engineering. Using RLVE-GYM, we show that environment scaling, i.e., expanding the collection of training environments, consistently improves generalizable reasoning capabilities. RLVE with joint training across all 400 environments in RLVE-GYM yields a 3.37% absolute average improvement across six reasoning benchmarks, starting from one of the strongest 1.5B reasoning LMs. By comparison, continuing this LM’s original RL training yields only a 0.49% average absolute gain despite using over 3× more compute. We release our code publicly.
+                    </td>
+                </tbody>
+
+          <table
 
           <table
                 style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
