@@ -106,6 +106,31 @@
               </tr>
             </tbody>
           </table>
+
+          <table
+          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <papertitle>Anchored Decoding: Provably Reducing Copyright Risk for Any Language Model</papertitle>
+              <br>
+              <strong>Jacqueline He</strong>, Jonathan Hayase, Wen-tau Yih, Sewoong Oh, Luke Zettlemoyer, Pang Wei Koh
+              <br>
+              <em>preprint</em> 2026.
+              <br>
+              <a id="sample_text" onClick="showAbstract('abs-anchored-decoding')">abstract</a> /
+              <a href="https://arxiv.org/abs/2602.07120">paper</a> /
+              <a href="https://github.com/jacqueline-he/anchored-decoding">code</a> /
+              <a href="https://tinyurl.com/anchored-decoding-demo">demo</a> 
+              <br>
+              <div id="abs-anchored-decoding"
+                style="display:none; border-style:dotted; padding:10px;  margin-top: 10px; border-color: #8fa19c">
+                Modern language models (LMs) tend to memorize portions of their training data and emit verbatim spans. When the underlying sources are sensitive or copyright-protected, such reproduction raises issues of consent and compensation for creators and compliance risks for developers. We propose Anchored Decoding, a plug-and-play inference-time method for suppressing verbatim copying: it enables decoding from any risky LM trained on mixed-license data by keeping generation in bounded proximity to a permissively trained safe LM. Anchored Decoding adaptively allocates a user-chosen information budget over the generation trajectory and enforces per-step constraints that yield a sequence-level guarantee, enabling a tunable risk-utility trade-off. To make Anchored Decoding practically useful, we introduce a new permissively trained safe model (TinyComma 1.8B), as well as Anchored<sub>Byte</sub> Decoding, a byte-level variant of our method that enables cross-vocabulary fusion via the ByteSampler framework (Hayase et al., 2025). We evaluate our methods across six model pairs on long-form evaluations of copyright risk and utility. Anchored and Anchored<sub>Byte</sub> Decoding define a new Pareto frontier, preserving near-original fluency and factuality while eliminating up to 75% of the measurable copying gap (averaged over six copying metrics) between the risky baseline and a safe reference, at a modest inference overhead.
+              </td>
+          </tbody>
+
+    <table
+
+
           <table
                 style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
@@ -128,27 +153,6 @@
 
           <table
 
-          <table
-                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                  <td style="padding:20px;width:100%;vertical-align:middle">
-                    <papertitle>OpenScholar: Synthesizing Scientific Literature with Retrieval-augmented LMs</papertitle>
-                    <br>
-                    Akari Asai, <strong>Jacqueline He</strong>*, Rulin Shao*, Weijia Shi, Amanpreet Singh, Joseph Chee Chang, Kyle Lo, Luca Soldaini, Sergey Feldman, Mike D'arcy, David Wadden, Matt Latzke, Minyang Tian, Pan Ji, Shengyan Liu, Hao Tong, Bohao Wu, Yanyu Xiong, Luke Zettlemoyer, Graham Neubig, Dan Weld, Doug Downey, Wen-tau Yih, Pang Wei Koh, Hannaneh Hajishirzi
-                    <br>
-                    <em>Nature (in press); preprint</em> 2024.
-                    <br>
-                    <a id="sample_text" onClick="showAbstract('abs-openscholar')">abstract</a> /
-                    <a href="https://arxiv.org/abs/2411.14199">paper</a> /
-                    <a href="https://github.com/AkariAsai/OpenScholar">code</a> /
-                    <a href="https://allenai.org/blog/openscholar">blog</a> /
-                    <a href="https://openscholar.allen.ai/">demo</a>
-                    <br>
-                    <div id="abs-openscholar"
-                      style="display:none; border-style:dotted; padding:10px;  margin-top: 10px; border-color: #8fa19c">
-                      Scientific progress depends on researchers' ability to synthesize the growing body of literature. Can large language models (LMs) assist scientists in this task? We introduce OpenScholar, a specialized retrieval-augmented LM that answers scientific queries by identifying relevant passages from 45 million open-access papers and synthesizing citation-backed responses. To evaluate OpenScholar, we develop ScholarQABench, the first large-scale multi-domain benchmark for literature search, comprising 2,967 expert-written queries and 208 long-form answers across computer science, physics, neuroscience, and biomedicine. On ScholarQABench, OpenScholar-8B outperforms GPT4o by 5% and PaperQA2 by 7% in correctness, despite being a smaller, open model. While GPT4o hallucinates citations 78 to 90% of the time, OpenScholar achieves citation accuracy on par with human experts. OpenScholar's datastore, retriever, and self-feedback inference loop also improves off-the-shelf LMs: for instance, OpenScholar-GPT4o improves GPT4o's correctness by 12%. In human evaluations, experts preferred OpenScholar-8B and OpenScholar-GPT4o responses over expert-written ones 51% and 70% of the time, respectively, compared to GPT4o's 32%. We open-source all of our code, models, datastore, data and a public demo.</div>
-                  </td>
-                </tbody>
 
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -160,6 +164,28 @@
               </tr>
             </tbody>
           </table>
+
+          <table
+          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <papertitle>OpenScholar: Synthesizing Scientific Literature with Retrieval-augmented LMs</papertitle>
+              <br>
+              Akari Asai, <strong>Jacqueline He</strong>*, Rulin Shao*, Weijia Shi, Amanpreet Singh, Joseph Chee Chang, Kyle Lo, Luca Soldaini, Sergey Feldman, Mike D’Arcy, David Wadden, Matt Latzke, Jenna Sparks, Jena D. Hwang, Varsha Kishore, Minyang Tian, Pan Ji, Shengyan Liu, Hao Tong, Bohao Wu, Yanyu Xiong, Luke Zettlemoyer, Graham Neubig, Daniel S. Weld, Doug Downey, Wen-tau Yih, Pang Wei Koh & Hannaneh Hajishirzi<br>
+              <em>Nature</em> 2026.
+              <br>
+              <a id="sample_text" onClick="showAbstract('abs-openscholar')">abstract</a> /
+              <a href="https://www.nature.com/articles/s41586-025-10072-4">paper</a> /
+              <a href="https://github.com/AkariAsai/OpenScholar">code</a> /
+              <a href="https://allenai.org/blog/openscholar">blog</a> /
+              <a href="https://openscholar.allen.ai/">demo</a>
+              <br>
+              <div id="abs-openscholar"
+                style="display:none; border-style:dotted; padding:10px;  margin-top: 10px; border-color: #8fa19c">
+                Scientific progress depends on the ability of researchers to synthesize the growing body of literature. Can large language models (LLMs) assist scientists in this task? Here we introduce OpenScholar, a specialized retrieval-augmented language model (LM)1 that answers scientific queries by identifying relevant passages from 45 million open-access papers and synthesizing citation-backed responses. To evaluate OpenScholar, we develop ScholarQABench, the first large-scale multi-domain benchmark for literature search, comprising 2,967 expert-written queries and 208 long-form answers across computer science, physics, neuroscience and biomedicine. Despite being a smaller open model, OpenScholar-8B outperforms GPT-4o by 6.1% and PaperQA2 by 5.5% in correctness on a challenging multi-paper synthesis task from the new ScholarQABench. Although GPT-4o hallucinates citations 78–90% of the time, OpenScholar achieves citation accuracy on par with human experts. OpenScholar’s data store, retriever and self-feedback inference loop improve off-the-shelf LMs: for instance, OpenScholar-GPT-4o improves the correctness of GPT-4o by 12%. In human evaluations, experts preferred OpenScholar-8B and OpenScholar-GPT-4o responses over expert-written ones 51% and 70% of the time, respectively, compared with 32% for GPT-4o. We open-source all artefacts, including our code, models, data store, datasets and a public demo.
+              </div>
+            </td>
+          </tbody>
 
           <table
           style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
