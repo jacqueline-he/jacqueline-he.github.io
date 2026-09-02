@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+ll<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
@@ -97,16 +97,35 @@
             </tbody>
           </table>
 
-          <!-- <table
+          <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr>
                 <td style="padding:10px;width:100%;vertical-align:middle">
-                  <heading>Preprints & Workshop Papers</heading>
+                  <heading>Preprints</heading>
                 </td>
               </tr>
             </tbody>
-          </table> -->
+          </table>
+
+                    <table
+                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <papertitle>Knowledge Distillation During Mid-Training Favors Reasoning over Factual Recall</papertitle>
+                    <br>
+                    <strong>Jacqueline He</strong>, Howard Yen, Shuyue Stella Li, Margaret Li, Hanqing Zeng, Yinglong Xia, Benyu Zhang, Zhuokai Zhao, Qiang Zhang, Pang Wei Koh, Luke Zettlemoyer, Wen-tau Yih
+                    <br>
+                    preprint 2026. <br>
+                    <a id="sample_text" onClick="showAbstract('abs-switch-distillation')">abstract</a> /
+                    <a href="https://arxiv.org/abs/2609.01532">paper</a> /
+                    <a href="https://github.com/facebookresearch/midtraining-distillation">code</a>
+                    <br>
+                    <div id="abs-switch-distillation"
+                      style="display:none; border-style:dotted; padding:10px;  margin-top: 10px; border-color: #8fa19c">
+                      Logit-based knowledge distillation (KD) is used to train smaller language models (LMs) via supervision from stronger teachers, but whether its benefits are consistent across training stages remains unclear. Through controlled experiments, we find that forward Kullback-Leibler (KL) distillation--the standard KD formulation--with post-trained teachers behaves fundamentally differently during mid-training, an intermediate phase of self-supervised learning on curated corpora. Surprisingly, while forward KD simultaneously improves reasoning and factual recall during pre-training relative to standard next-token prediction (NTP), it instead slows factual recall acquisition during mid-training despite continued reasoning gains. We trace this stage dependence to an asymmetry in teacher confidence across data domains and the student's evolving knowledge state: teachers are more confident on procedural than knowledge-intensive data, while students acquire low-entropy factual knowledge earlier in training. To mitigate this imbalance, we propose Switch Distillation, a simple mid-training objective that distills on tokens where the teacher is confident, using teacher predictive entropy as a lightweight routing signal, and otherwise falls back to cross-entropy. Switch Distillation consistently outperforms existing distillation objectives across teacher sizes. Relative to standard NTP, it achieves 1.61-1.71x the reasoning performance and 1.13-1.19x the knowledge and commonsense performance while preserving 96.7-96.8% of factual recall. Crucially, these benefits persist after post-training: Switch Distillation closes the factual recall gap while maintaining 1.25-1.32x and 1.13-1.20x gains in reasoning and knowledge and commonsense, respectively.
+                    </td>
+                </tbody>
 
 
 
@@ -130,12 +149,12 @@
                     <strong>Jacqueline He</strong>, Jonathan Hayase, Wen-tau Yih, Sewoong Oh, Luke Zettlemoyer, Pang Wei Koh
                     <br>
                     <em>ICML</em> 2026. <br>
-                    <em>DATA-FM at ICLR</em> 2026. &nbsp;<strong style="color: red;">Best Paper Honorable Mention (Oral).</strong> 
+                    <em>DATA-FM at ICLR</em> 2026. &nbsp;<strong style="color: red;">Best Paper Honorable Mention (Oral).</strong>
                     <br>
                     <a id="sample_text" onClick="showAbstract('abs-anchored-decoding')">abstract</a> /
                     <a href="https://arxiv.org/abs/2602.07120">paper</a> /
                     <a href="https://github.com/jacqueline-he/anchored-decoding">code</a> /
-                    <a href="https://tinyurl.com/anchored-decoding-demo">demo</a> 
+                    <a href="https://tinyurl.com/anchored-decoding-demo">demo</a>
                     <br>
                     <div id="abs-anchored-decoding"
                       style="display:none; border-style:dotted; padding:10px;  margin-top: 10px; border-color: #8fa19c">
@@ -157,7 +176,7 @@
                     <br>
                     <a id="sample_text" onClick="showAbstract('abs-rlve')">abstract</a> /
                     <a href="https://arxiv.org/abs/2511.07317">paper</a> /
-                    <a href="https://github.com/Zhiyuan-Zeng/RLVE">code</a> 
+                    <a href="https://github.com/Zhiyuan-Zeng/RLVE">code</a>
                     <br>
                     <div id="abs-rlve"
                       style="display:none; border-style:dotted; padding:10px;  margin-top: 10px; border-color: #8fa19c">
@@ -201,7 +220,7 @@
               <br>
               <a id="sample_text" onClick="showAbstract('abs-pic')">abstract</a> /
               <a href="https://arxiv.org/abs/2506.06589">paper</a> /
-              <a href="https://github.com/jacqueline-he/precise-information-control">code</a> 
+              <a href="https://github.com/jacqueline-he/precise-information-control">code</a>
               <br>
               <div id="abs-pic"
                 style="display:none; border-style:dotted; padding:10px;  margin-top: 10px; border-color: #8fa19c">
@@ -222,13 +241,13 @@
               <br>
               <a id="sample_text" onClick="showAbstract('abs-prefpalette')">abstract</a> /
               <a href="https://arxiv.org/abs/2507.13541">paper</a> /
-              <a href="https://github.com/stellalisy/prefpalette">code</a> 
+              <a href="https://github.com/stellalisy/prefpalette">code</a>
               <br>
               <div id="abs-prefpalette"
                 style="display:none; border-style:dotted; padding:10px;  margin-top: 10px; border-color: #8fa19c">
                 Personalizing AI systems requires understanding not just what users prefer, but the reasons that underlie those preferences—yet current preference models typically treat human judgment as a black box. We introduce PrefPalette, a framework that decomposes preferences into attribute dimensions and tailors its preference prediction to distinct social community values in a human-interpretable way. PrefPalette operationalizes a cognitive science principle known as multi-attribute decision making
 in two ways: (1) a scalable counterfactual attribute synthesis step that involves generating synthetic training data to isolate for individual attribute effects (e.g., formality, humor, cultural values), and (2) attention-based preference modeling that learns how different social communities dynamically weight these attributes. This approach moves beyond aggregate preference modeling to capture the diverse
-evaluation frameworks that drive human judgment. When evaluated on 45 social communities from the online platform Reddit, PrefPalette outperforms GPT-4o by 46.6% in average prediction accuracy. Beyond raw predictive improvements, PrefPalette also shed light on intuitive, community-specific profiles: scholarly communities prioritize verbosity and stimulation, conflict-oriented communities value sarcasm and directness, and support-based communities emphasize empathy. By modeling the attribute-mediated structure of human judgment, PrefPalette delivers both superior preference modeling and transparent, interpretable insights, and serves as a first step toward more trustworthy, value-aware personalized applications.  
+evaluation frameworks that drive human judgment. When evaluated on 45 social communities from the online platform Reddit, PrefPalette outperforms GPT-4o by 46.6% in average prediction accuracy. Beyond raw predictive improvements, PrefPalette also shed light on intuitive, community-specific profiles: scholarly communities prioritize verbosity and stimulation, conflict-oriented communities value sarcasm and directness, and support-based communities emphasize empathy. By modeling the attribute-mediated structure of human judgment, PrefPalette delivers both superior preference modeling and transparent, interpretable insights, and serves as a first step toward more trustworthy, value-aware personalized applications.
               </div>
             </td>
           </tbody>
